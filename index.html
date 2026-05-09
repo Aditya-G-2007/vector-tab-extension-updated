@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <main id="app-container">
+        <div class="top-row">
+            <div class="widget-group">
+                <div class="crypto-container">
+                    <img class="bitcoinHolder" alt="crypto icon"> 
+                    <button class="bitcoin-text">Bitcoin</button>
+                    <div class="crypto-stats">
+                        <span id="current"></span>
+                        <span id="high"></span>
+                        <span id="low"></span>
+                    </div>
+                </div>
+                
+                <div class="weather-container" id="weather-box">
+                    <img src="https://i.pinimg.com/736x/10/5e/44/105e443ee07af7c99716a5fc17cc28b6.jpg" alt="logo" class="w-logo">
+                    <span id="temperature-text"></span>
+                    <p id="weather-desc"></p>
+                </div>
+            </div>
+
+            <button id="todoBtn" class="todo-btn">📝 Todo</button>
+
+            <dialog id="todoDialog" class="todo-dialog">
+                <div class="dialog-header">
+                    <h2>My Tasks</h2>
+                    <button class="close-btn" id="closeDialog">&times;</button>
+                </div>
+                
+                <form id="form" class="todo-form">
+                    <input type="text" id="input" placeholder="Add a new task..." required>
+                    <button type="submit" class="add-btn">Add Task</button>
+                </form>
+                
+                <div id="todoList" class="todo-items-container">
+                </div>
+                
+                <button id="remove" class="clear-all-btn">🗑️ Clear All</button>
+            </dialog>
+        </div>
+
+        <div class="center-content">
+            <h1 id="time">00:00</h1>
+                <script async src="https://cse.google.com/cse.js?cx=a59e7ea42c5ba49a8"></script>
+            <div class="search-box">
+                <gcse:search></gcse:search>
+            </div>
+        </div>
+
+        <section class="news-section">
+            <h2># NEWS</h2>
+            <div id="container" class="news-grid">
+                </div>
+        </section>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
