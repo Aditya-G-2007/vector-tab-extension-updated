@@ -5,7 +5,9 @@ A high-performance, minimalist New Tab browser extension designed for developers
 ## 🚀 Key Features
 
 * **Real-time Market Data:** Live Bitcoin tracking (Current, High, Low) powered by the CoinGecko API.
+  
 * **Localized Weather:** Dynamic weather updates and icons based on your precise geolocation via OpenWeatherMap.
+
 * **Curated News Feed:** A clean, card-based top-headlines interface to stay informed without the clutter.
 * **Persistent To-Do List:** A modular, popup-based task manager using the modern HTML5 `<dialog>` element.
 * **Centralized Search:** Integrated Google Programmable Search Engine for seamless web navigation.
